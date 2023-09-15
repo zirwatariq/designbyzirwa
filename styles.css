@@ -246,7 +246,7 @@ h1{
     font-family: "Inter", Helvetica, sans-serif;
     color: #000000;
     line-height: 1.1em;
-    font-size: 1.44rem;
+    font-size: 1.8rem;
     font-variation-settings: "wght" 700;
     /*! margin-top: 0.5rem; */
 }
@@ -318,7 +318,19 @@ h3{
     background-color: #492B1B; 
     padding: 0rem 0rem 1rem 0rem;
 }
-
+/*
+.oval-background {
+  width: 50%;
+  height: 25%;
+  position: absolute;
+  top: 65%;
+  left: 20%;
+  background: linear-gradient(rgba(25, 62, 31, 100%), rgba(210, 173, 39, 100%) ); /* Linear gradient background 
+  border-radius: 50%;
+  backdrop-filter: blur(90px);
+  z-index: -1; /* Place the background behind the image 
+}
+*/
 .intropara1{
     color: #fff;
     padding: 0.9rem 1rem;
@@ -401,24 +413,32 @@ margin-bottom: 2rem;
    
  }
  /*about page */
+ .experience{
+  color: #393939;
+  font-variation-settings: "wght" 600;
+  line-height: 1.1em;
+  font-size: 1.5rem;
+ }
  .herotwo2{
   margin-top: 1rem;
  }
  .role{
   font-variation-settings: "wght" 500;
+  line-height: 1.2em;
+  margin-top: 0.3rem;
+  font-size: 1.1rem;
  }
- .imagem{
-  margin-bottom: 6.7rem;
-  margin-right: 11rem;
- }
- 
+
+ .grad1-details {
+  margin-top: 1rem;}
  .herointro2 {
   max-width: 80rem;
   color: #fff;
  }
- .herointro2- {
-  margin-top: 4rem;
- }
+ .herotitle1 {
+  color: #fff;
+  margin-top: 7rem;
+}
 
 /*footer */
 footer{
@@ -492,14 +512,20 @@ footer p{
 
   /*about page*/
   .resume{
-    padding: 1rem;
+    padding: 2rem;
   }
   .grad1 {
     margin-top: 1rem;
   }
+  .job {
+    font-size: 1.2rem;}
+
+.grad{
+  margin-top: 1.5rem;}
   .herointro2- {
     /*! padding: 3rem; */
     color: #fff;
+    margin-top: 0.5rem;
   }
   /*motion graphics page */
   .motion {
@@ -702,8 +728,9 @@ footer p{
  }
  .heroonee{
   max-width: 40rem;
-  margin-left: 6rem;
-  margin-bottom: 10rem;
+  /*! margin-left: 6rem; */
+  /*! margin-bottom: 10rem; */
+  align-content: center;
  }
  .herointro {
   max-width: 30rem;
@@ -736,11 +763,12 @@ footer p{
  .herobanner1 {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
-  padding: 20rem 1rem 6rem 0rem;
+  /*! margin: 0 auto; */
+  padding: 25rem 1rem 6rem 1rem;
   height: 85vh;
   align-items: center;
   /*! padding: 3rem; */
+  justify-content: center;
  }
  .name{
   font-size: 1rem;
@@ -754,10 +782,10 @@ footer p{
   /*font-size: 2.188rem;*/
 }
 h2{
-  font-size: 2.4rem;
+  font-size: 2.2rem;
 }
 h3{
-  font-size: 2rem; 
+  font-size: 1.8rem; 
 }
 .introtitle {
   font-size: 2.063rem;
@@ -840,7 +868,7 @@ max-width: 30rem;
 
 /*about page */
 .resume {
-    padding: 3rem;
+    padding: 3rem 3rem 3rem 6.5rem;
 }
 .herotwo2 {
   max-width: 36rem;
@@ -849,6 +877,29 @@ max-width: 30rem;
 
 .exploremore1 {
  margin-left: 12rem;
+}
+
+.grad{
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+time {
+  font-size: 1.1rem;
+}
+.job {
+  font-size: 1.8rem;
+}
+.role{
+  font-variation-settings: "wght" 500;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+ }
+.grad1-content{
+  max-width: 17rem;
+}
+.grad1-details{
+  max-width: 43rem;
 }
 
 /*scrool button*/
