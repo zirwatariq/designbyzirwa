@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/lop0dor.css">
+    <meta name="author" content="Zirwa Tariq" >
+    <meta name="Designer" content="Zirwa Tariq" >
+    <title>About Page | Zirwa's Design</title>
+    <meta name="keyword" content="art, design, digital design, case studies, portfolio, graphics, Graphic Design, Inclusive design, creative">
+    <meta name="description" content="Zirwa.design">
+    <!--these three lines of code is for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+   
+  
+</head>
+<body>
+  <a id="skip" href="#mainPage"> Skip to main </a>
+
+  <!--Navigation-->
+  <header class="header">
+    <div class="headerlogo">
+    <a href="home.html"><img src="assets/logo.png" class="logo" alt="zirwa"></a>
+    </div>
+    <div class="main-nav">
+  <button onclick="openNav()"><img src="assets/hamburger.png" class="menubt" alt="hamburgermenu"></button>
+  <nav class="drawer" id="theDrawer">
+          <!-- the aria-label helps screen reader users understand the purpose of the button because of the unclear text "x". 
+              When the botton gains keyboard focus it opens the navigation so that the keyboard focus can be visible. assets/WEBlogoF.png -->
+
+        <button aria-label="Close" class="closeBtn" onfocus="openNav()" onclick="closeNav()">&times;</button>
+        <ul class="bar">
+        <li><a href="home.html" onfocus="openNav()">Home</a></li>
+        <li><a href="about.html" onfocus="openNav()">About</a></li>
+        <li><a href="" >Portfolio &#8964;</a>
+           
+          <ul>
+                <li>
+                  <a href="casestudy1.html">Play your way to creativity</a></li>
+                <li>
+                  <a href="case study2.html">Art Archive</a></li>
+                <li>
+                  <a href="#!">Sortify</a> </li>
+                <li>
+                  <a href="graphics.html">Graphic / Digital Design</a> </li>
+                <li>
+                  <a href="motiongraphics.html">Motion Graphics</a> </li>
+              </ul>
+          
+        </li>
+        <li><a href="mailto:ztariq@oswego.edu" onfocus="openNav()" onblur="closeNav()">Contact</a></li>
+      </ul> 
+  </nav> 
+
+</div>
+
+</header>
+    <main id="mainPage">
+        <article>
+            <header class="herobanner1">
+             <div class="heroonee">
+            <h1 class="herotitle1">About me</h1>
+            <p class="herointro2-">As a Digital designer, my expertise lies in creating visually appealing designs and intuitive user interfaces for digital products. 
+            I’ve experience in both print and digital design and passionate about creating user-centered and accessible designs that not only 
+            look great but also provide seamless and enjoyable experiences for users.</p>
+             </div>>
+             <div class="imagesec">
+              <img src="assets/me_1.png" alt="image" class="imagem" style="width: 100%; height: 100%;">
+             </div>
+            
+        
+</header>
+<section class="resume">
+  <h1>Experience</h1>
+<div class="grad1">
+<h3>SUNY Oswego</h3>
+<p class="role">Graduate Assistant, Sept 2022 - May 2023</p>
+<ul>
+<li>Updated the official website using Drupal 9 and make it more user 
+  friendly which in a 35% increase in website interactions and a 20% decrease in bounce rates.</li>
+<li>The incorporation of modern technology and original designs led to a 45% increase in social media engagement 
+  and a 25% rise in poster click-through rates, resulting in an overall better user experience.</li>
+  <li>resulted in a 90% reduction in design revisions and a 40% increase in brand consistency across marketing campaigns.</li>
+</ul>
+</div>
+
+<div class="grad1">
+  <h3>Facilitie services - SUNY Oswego</h3>
+  <p class="role">Graphic Designer, Sept 2022 - Aug 2023</p>
+  <ul>
+  <li>Assisted faculty members with data collection for potential academic / web publications to include 
+    in official website to make the experience user focused.</li>
+  <li>By updating the website and incorporating accessibility and inclusive design results in Improved user 
+    experience by 15% and increased click rates.</li>
+   
+  </ul>
+  </div>
+
+  <div class="grad1">
+    <h3>Lloyds Knight International</h3>
+    <p class="role">Graphic Designer, June 2021 - Dec 2021</p>
+    <ul>
+    <li>Developed original designs for print media, magazines, and social media accounts results in increased user interaction rate by 16%.</li>
+    <li>Collaborated with marketing teams to confirm design compliance with brand guidelines and developed medias for the websites to make it more 
+      user focused.</li>
+     
+    </ul>
+    </div>
+
+    <div class="grad1">
+      <h3>Interschange</h3>
+      <p class="role">Graphic Designer, Oct 2019 - Sept 2021</p>
+      <ul>
+      <li>Designing high quality visuals on larger scale prints results in increase sales and the product popularity.</li>
+      <li>Developed original and unique designs for the social medias leads to increase rate of interactivity on the social platforms which also
+        causes the increase in sales of the products.</li>
+       
+      </ul>
+      </div>
+</section>
+</article>
+    </main>
+    <footer>
+      <div class="backtopimage">
+       <a href="#mainPage">
+     <img src="assets/backtop.png" alt="round circle with arrow pointing 
+     upwards to indicate back to top" class="backtop"></a>
+     </div>
+     <div class="foot1">
+       <p>&copy;2023 Zirwa Tariq</p>
+       <nav class="social">
+         <ul>
+           <li><img src="assets/socialicons-02.png" class="sicon" alt="white facebook icon"></li>
+           <li><img src="assets/socialicons-03.png" class="sicon" alt="white facebook icon"></li>
+           <li><img src="assets/socialicons-04.png" class="sicon" alt="white Instagram icon"></li>
+       </ul>
+       </nav>
+       <p>Let’s connect</p>
+     </div>
+     <div class="foot2">
+       <a href="" class="links1">Download Resume </a>
+       <a href="mailto:ztariq@oswego.edu" class="links1">Contact me</a>
+     </div>
+     </footer>
+   <script src="drawer.js"></script>
+</body>
+</html>
