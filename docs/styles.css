@@ -218,7 +218,7 @@ button {
     display: block;
     /*! margin: 0 auto; */
     width: 30%;
-    margin-top: -4rem;
+    margin-top: -4.5rem;
     /*! align-items: right; */
     margin-left: 13.5rem;
 }
@@ -446,7 +446,7 @@ footer p{
   margin-right: auto;
   width: 15%;
   transform: translateY(-40%); /* Translate the image up by 40% of its own height to vertically center it */
-  margin-top: -1rem;
+  margin-top: -1.5rem;
 }
 /*social icons */
 .sicon {
@@ -461,8 +461,6 @@ footer p{
 .sicon:focus {
   opacity: 100%;
 }
-
-
 .sicon1 {
   opacity: 50%;
   width: 30px; 
@@ -536,12 +534,16 @@ footer p{
 }
 .software {
   color: #4f4f4f;}
+
 /*graphic design page */
 /* Slideshow container */
 .scrool {
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
  }
+ .logos-scrool {
+  margin-top: 4rem;}
+
 .slideshow-container {
   max-width: 500px;
   position: relative;
@@ -842,7 +844,7 @@ max-width: 30rem;
     margin: -4rem auto 1rem auto;
 }
 .iconswhite {
-  margin-top: 25rem;
+  margin-top: 22rem;
   margin-left: -73rem;
 }
 /*homepage tags portfolio */
