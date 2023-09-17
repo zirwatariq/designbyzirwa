@@ -12,23 +12,19 @@
     <!--these three lines of code is for font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <link href="styles.css" rel="stylesheet">
-   
-  
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet">   <!--this line of code is for stylesheet -->
 </head>
 <body>
     <a id="skip" href="#mainPage"> Skip to main </a>
-
     <!--Navigation-->
     <header class="header">
         <div class="headerlogo">
         <a href="index.html"><img src="assets/logo.png" class="logo" alt="zirwa"></a>
         </div>
         <div class="main-nav">
-      <button onclick="openNav()"><img src="assets/hamburger.png" class="menubt" alt="hamburgermenu"></button>
-      <nav class="drawer" id="theDrawer">
+        <button onclick="openNav()"><img src="assets/hamburger.png" class="menubt" alt="hamburgermenu"></button>
+        <nav class="drawer" id="theDrawer">
               <!-- the aria-label helps screen reader users understand the purpose of the button because of the unclear text "x". 
                   When the botton gains keyboard focus it opens the navigation so that the keyboard focus can be visible. assets/WEBlogoF.png -->
    
@@ -87,7 +83,7 @@
             <section class="work">
              <div class="headings">
             <h1>Selected Work</h1>
-            <h2>UI/UX Design</h2>
+            <h3>UI/UX Design</h3>
         </div>
             <section class="portfoliosample1">
               <div class="imageintro">
@@ -189,7 +185,7 @@
 -->
       <section class="additionalwork">
         <div class="headingadditional">
-      <h1>Additional Work</h1>
+      <h2>Additional Work</h2>
         </div>
       <!--fix the content-->
       <div class="flexcontent">
@@ -226,7 +222,7 @@
      <img src="assets/backtop.png" alt="round circle with arrow pointing 
      upwards to indicate back to top" class="backtop"></a>
      </div>
-     <section class="footercontent">
+     <div class="footercontent">
      <div class="foot1">
        <nav class="social">
          <ul>
@@ -242,7 +238,7 @@
 
        <a href="mailto:ztariq@oswego.edu" class="links1">Contact me</a>
      </div>
-    </section>
+    </div>
      </footer>
     <script src="drawer.js"></script>
 </body>

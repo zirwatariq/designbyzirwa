@@ -246,23 +246,23 @@ h1{
     font-family: "Inter", Helvetica, sans-serif;
     color: #000000;
     line-height: 1.1em;
-    font-size: 1.8rem;
-    font-variation-settings: "wght" 700;
+    font-size: 1.375rem;
+    font-variation-settings: "wght" 800;
     /*! margin-top: 0.5rem; */
 }
 h2{
     font-family: "Inter", Helvetica, sans-serif;
-    color: #393939;
+    color: #000000;
     line-height: 1.1em;
-    font-size: 1.2rem;
-    font-variation-settings: "wght" 500;
+    font-size: 1.25rem;
+    font-variation-settings: "wght" 700;
     /*! margin-top: 0.5rem; */
 }
 h3{
     font-family: "Inter", Helvetica, sans-serif;
-    color: #000000;
+    color: #444444;
     line-height: 1.1em;
-    font-size: 1.4rem;
+    font-size: 1.125rem;
     font-variation-settings: "wght" 700;
 }
 
@@ -626,20 +626,6 @@ footer p{
 .nexxt {
   text-align: center;
 }
-/* Fading animation
-.fade {
-  animation-name: fade;
-  animation-duration: 1s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-.logos-scrool {
-  margin-top: 3rem;
-  /*! margin-bottom: 1rem; 
-}*/
 .fade-in-out {
   animation: fade 1s ease-in-out;
 }
@@ -648,6 +634,89 @@ footer p{
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+/*case study 1*/
+.casehead{
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+.types{
+  color: #4f4f4f;
+  font-size: 0.8rem;
+}
+.one{
+  margin-bottom: 1rem;
+}
+.two{
+  margin-bottom: 1rem;
+}
+.three{
+  margin-bottom: 1rem;
+}
+.four{
+  margin-bottom: 1rem;
+}
+.five{
+  margin-bottom: 1rem;
+}
+.six{
+  margin-bottom: 1rem;
+}
+.process{
+  margin-bottom: 1rem;
+}
+.userflow{
+  margin-bottom: 1rem;
+}
+.prototype1{
+  margin-bottom: 1rem;
+}
+.prototype2{
+  margin-bottom: 1rem;
+}
+.accessibility{
+  margin-bottom: 1rem;
+}
+.styleguide{
+  margin-bottom: 1rem;
+}
+.visualdesign{
+  margin-bottom: 1rem;
+}
+.difful{
+  list-style: none;
+}
+.lastpart{
+  background-color: #000;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+.lastparth2{
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+.conclusion{
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.cont{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.userflowchart{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.featureul {
+  margin-left: 1.5rem;}
+  .num{
+    font-variation-settings: "wght" 700;
+    text-decoration: underline;
+  }
+  .li-fimargin{
+    margin-top: 2rem;
+  }
 /* desktop version */
 
   @media (min-width: 900px) {
@@ -764,7 +833,7 @@ footer p{
   display: flex;
   flex-direction: row;
   /*! margin: 0 auto; */
-  padding: 25rem 1rem 6rem 1rem;
+  padding: 5rem 1rem 6rem 1rem;
   height: 85vh;
   align-items: center;
   /*! padding: 3rem; */
@@ -776,7 +845,7 @@ footer p{
 
  /*headings */
  h1{
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.3;
   /*font-size: 2.188rem;*/
@@ -786,6 +855,9 @@ h2{
 }
 h3{
   font-size: 1.8rem; 
+}
+h4{
+  font-size: 1.5rem; 
 }
 .introtitle {
   font-size: 2.063rem;
@@ -900,6 +972,7 @@ time {
 }
 .grad1-details{
   max-width: 43rem;
+  margin-top: -0rem;
 }
 
 /*scrool button*/
@@ -995,5 +1068,75 @@ footer p{
   .sicon {
     width: 50px; 
     height: 50px;  }
-
+/*casestudy1*/
+.casehead{
+  display: flex;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: -5rem;
+}
+.imagetop{
+  max-width: 40rem;
+}
+.grid{
+  display: grid;
+  padding: 3rem;
+  grid-template-rows: auto auto; /* 2 rows, adjust the height as needed */
+  grid-template-columns: 1.3fr 0.7fr 1fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 45px;
+}
+.one {
+  grid-column: 1 / 1; /* Div one spans from column 1 to column 2 */
+  grid-row: 1 / 2; /* Div one spans from row 1 to row 2 */}
+  .two {
+  grid-column: 1 / 2; /* Div two spans from column 2 to column 3 */
+  grid-row: 2 / 2; /* Div two spans from row 1 to row 2 */
+  }
+.grid-center{
+  margin-left: 3rem;
+}
+.difful{
+  list-style: circle;
+  margin-left: 1rem;
+  margin-top: 1rem;}
+.grid-margin{
+  margin-top: 1rem;
+}
+.process{
+  padding: 3rem;
+}
+.processcontent {
+  max-width: 36rem;
+  margin-left: 3rem;
+}
+.userflow {
+  padding: 3rem 6rem;}
+.prototype1{
+  padding: 3rem 6rem;
+}
+.prototype2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 6rem;
+}
+.hi-content{
+  max-width: 40rem;
+}
+.cont-1{
+  max-width: 35rem;
+  margin-bottom: 3rem;
+}
+.accessibility{
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 6rem;
+}
+.acc-content{
+  max-width: 40rem;
+}
   }
