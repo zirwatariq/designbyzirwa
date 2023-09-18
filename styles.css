@@ -221,7 +221,42 @@ button {
 }
 .links {
   margin: 0 3px;
+  color: #d6d6d6;
+  text-decoration: none;
+  font-variation-settings: "wght" 700;
+  position: relative; /* Required for pseudo-element */
 }
+.links::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this value to control the underline thickness */
+  width: 0;
+  height: 2px; /* Adjust this value to control the underline thickness */
+  background-color: #d6d6d6;
+  transition: width 0.3s ease;
+}
+
+.links:hover::before,
+.links:focus::before { /* Add focus style */
+  width: 100%;
+  outline: none; /* Remove default focus outline */
+}
+/*
+.links::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.links:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} 
+*/
 .scrollbutton{
     display: block;
     /*! margin: 0 auto; */
@@ -260,7 +295,7 @@ h2{
 }
 h3{
     font-family: "Inter", Helvetica, sans-serif;
-    color: #444444;
+    color: #2e2e2e;
     line-height: 1.1em;
     font-size: 1.125rem;
     font-variation-settings: "wght" 700;
@@ -287,11 +322,11 @@ h3{
 }
 
 .contentintro1 {
-  padding: 0.5rem 1rem;
-  margin-top: -1.5rem;
+  padding: 0rem 1rem;
+  /*! margin-top: -1.5rem; */
 }
 .contentintro2-2 {
-  padding: 1rem;
+  padding: 0rem 1rem;
 }
 .contentintro2 {
   padding: 1rem;
@@ -304,7 +339,7 @@ h3{
     padding: 0rem 0rem 1rem 0rem;
 }
 .portfoliosample2{
-    margin-bottom: 2rem;
+    /*! margin-bottom: 2rem; */
     /*! background-color: #481E15; */ 
     padding: 0rem 0rem 1rem 0rem;
 }
@@ -354,7 +389,7 @@ font-variation-settings: "wght" 700;
 }
 /*explore more button styling */
 .exploremore{
-   padding: 0.5rem;
+   padding: 0.8rem;
    color: #fff;
    background-color: #020202;
    border-radius: 0.4rem;
@@ -367,7 +402,30 @@ font-variation-settings: "wght" 700;
    text-align: center; /* Center-align text inside the button */
    box-shadow: inset 0 0 3px #fff;
 }
-
+.exploremore:link{
+  text-decoration: none;
+}
+.exploremore:visited{
+  text-decoration: underline;
+}
+.exploremore:hover{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transform: translateY(-0.25em);
+  background-color: #fff;
+  border: 1.4px solid #000;
+  transition: 0.4s linear;
+  color: #000;
+}
+.exploremore:focus{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transform: translateY(-0.25em);
+  background-color: #fff;
+  border: 1.4px solid #000;
+  color: #000;
+}
+.exploremore:active{
+  text-decoration: none;
+}
 
 /* ADDITIONAL WORK STYLING */
 .printmedia {
@@ -384,7 +442,7 @@ margin-bottom: 2rem;
     
 }
 .exploremore1{
-    padding: 0.5rem;
+    padding: 0.8rem;
     color: #ffffff;
     background-color: #000000;
     text-decoration: none;
@@ -394,7 +452,32 @@ margin-bottom: 2rem;
     display: block;
     width: fit-content; 
     text-align: center;
+    border-radius: 0.4rem;
  }
+ .exploremore1:link{
+  text-decoration: none;
+}
+.exploremore1:visited{
+  text-decoration: underline;
+}
+.exploremore1:hover{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transform: translateY(-0.25em);
+  background-color: #fff;
+  border: 1.4px solid #000;
+  transition: 0.4s linear;
+  color: #000;
+}
+.exploremore:focus{
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transform: translateY(-0.25em);
+  background-color: #fff;
+  border: 1.4px solid #000;
+  color: #000;
+}
+.exploremore1:active{
+  text-decoration: none;
+}
  .headingadditional {
     padding: 1rem;
  }
@@ -404,7 +487,7 @@ margin-bottom: 2rem;
     line-height: 1.1em;
     font-size: 1.2rem;
     font-variation-settings: "wght" 700; 
-    margin-top: 2rem;
+    margin-top: 1rem;
  }
 
  .introimage1{
@@ -412,12 +495,19 @@ margin-bottom: 2rem;
    background-color: #000;
    
  }
+ /*
+ .introimage1-1{
+  border-bottom: 1px solid #000;
+  background-color: #ffffff;
+ }
+ */
  /*about page */
  .experience{
-  color: #393939;
-  font-variation-settings: "wght" 600;
+  color: #000;
+  font-variation-settings: "wght" 800;
   line-height: 1.1em;
-  font-size: 1.5rem;
+  font-size: 2.3rem;
+  margin-bottom: 3rem;
  }
  .herotwo2{
   margin-top: 1rem;
@@ -717,6 +807,9 @@ footer p{
   .li-fimargin{
     margin-top: 2rem;
   }
+  .userflowchart-1{
+    display: none;
+  }
 /* desktop version */
 
   @media (min-width: 900px) {
@@ -960,7 +1053,7 @@ time {
   font-size: 1.1rem;
 }
 .job {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .role{
   font-variation-settings: "wght" 500;
@@ -973,6 +1066,7 @@ time {
 .grad1-details{
   max-width: 43rem;
   margin-top: -0rem;
+  margin-bottom: 2rem;
 }
 
 /*scrool button*/
@@ -1084,7 +1178,7 @@ footer p{
   display: grid;
   padding: 3rem;
   grid-template-rows: auto auto; /* 2 rows, adjust the height as needed */
-  grid-template-columns: 1.3fr 0.7fr 1fr;
+  grid-template-columns: 1.2fr 0.5fr 1fr;
   grid-row-gap: 20px;
   grid-column-gap: 45px;
 }
@@ -1096,7 +1190,7 @@ footer p{
   grid-row: 2 / 2; /* Div two spans from row 1 to row 2 */
   }
 .grid-center{
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 .difful{
   list-style: circle;
@@ -1125,18 +1219,73 @@ footer p{
   padding: 0rem 6rem;
 }
 .hi-content{
-  max-width: 40rem;
+  max-width: 35rem;
 }
 .cont-1{
   max-width: 35rem;
   margin-bottom: 3rem;
 }
+.con-content{
+  max-width: 38rem;
+}
 .accessibility{
   display: flex;
   flex-direction: row;
   padding: 0rem 6rem;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 .acc-content{
-  max-width: 40rem;
+  max-width: 36rem;
+}
+.styleguide{
+  padding: 3rem 6rem;
+}
+.visualdesign{
+  padding: 3rem 6rem;
+}
+.lastpart{
+  padding: 3rem 6rem 0rem 6rem;
+  margin-top: -5rem;
+}
+.featurediv{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.featurediv1{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.conclusion{
+  padding: 0rem 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.feature{
+  max-width: 35rem;
+}
+.userflowchart{
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+.userflowchart-1{
+  margin-top: 3rem;
+}
+.lastparth2{
+  margin-bottom: 0rem;
+}
+.userflowchart-1{
+  display: block;
 }
   }
