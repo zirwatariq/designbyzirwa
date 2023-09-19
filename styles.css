@@ -334,7 +334,7 @@ h3{
 .fade-in {
   opacity: 0;
   transform: translateY(20px); /* Optional: You can adjust the initial position */
-  transition: opacity 0.5s ease, transform 0.2s ease;
+  transition: opacity 0.5s ease, transform 0.1s ease;
 }
 .fade-in.active {
   background-color: #fff;
@@ -768,6 +768,18 @@ footer p{
   .userflowchart-1{
     display: none;
   }
+  /* case study 2 */
+  .mobile-centered{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .readmore{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .userflowchartt {
+    margin-top: 1rem;
+  }
 /* desktop version */
 
   @media (min-width: 900px) {
@@ -905,6 +917,7 @@ footer p{
 }
 h2{
   font-size: 2.2rem;
+  line-height: 1.4em;
 }
 h3{
   font-size: 1.8rem; 
@@ -1274,8 +1287,68 @@ footer p{
 .userflowchart-1{
   display: block;
 }
-/*sace study 2*/
+/*case study 2*/
 .typecont{
   max-width: 77rem;
 }
+.experiencee{
+  padding: 0rem 6rem;
+}
+.mobile-centered{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.readmore{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.readmorecontent{
+  max-width: 40rem;
+}
+.darkmode{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.darkmodecontent{
+  max-width: 35rem;
+}
+.userflowchartt {
+  margin-top: 0rem;
+}
+.workss {
+  padding: 2rem 6rem;
+}
+.scancode{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.scancodecontent{
+  max-width: 38rem;
+}
+.getinfocontent{
+  max-width: 38rem;
+}
+.getinfo{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0rem;
+  gap: 4rem;
+}
+
   }
