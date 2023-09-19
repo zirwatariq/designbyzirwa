@@ -688,22 +688,40 @@ footer p{
   line-height: 1.5em;
 }
 .one{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .two{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .three{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .four{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .five{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .six{
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+.one-1{
+  margin-bottom: 1.5rem;
+}
+.two-1{
+  margin-bottom: 1.5rem;
+}
+.three-1{
+  margin-bottom: 1.5rem;
+}
+.four-1{
+  margin-bottom: 1.5rem;
+}
+.five-1{
+  margin-bottom: 1.5rem;
+}
+.six-1{
+  margin-bottom: 1.5rem;
 }
 .process{
   margin-bottom: 1rem;
@@ -724,6 +742,7 @@ footer p{
 }
 .prototype1{
   margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 .prototype2{
   margin-bottom: 1rem;
@@ -734,9 +753,11 @@ footer p{
 }
 .styleguide{
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 .visualdesign{
   margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 .difful{
   list-style: none;
@@ -756,13 +777,14 @@ footer p{
   padding: 1rem;
 }
 .cont{
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-.userflowchart{
-  margin-top: 2rem;
+  margin-top: rem;
   margin-bottom: 2rem;
 }
+/*
+.userflowchart{
+  /*! margin-top: 2rem; */
+  /*! margin-bottom: 2rem; 
+}*/
 .featureul {
   margin-left: 1.5rem;}
   .num{
@@ -770,7 +792,7 @@ footer p{
     text-decoration: underline;
   }
   .li-fimargin{
-    margin-top: 2rem;
+    margin-top: 1.3rem;
   }
   /* case study 2 */
   .mobile-centered{
@@ -831,9 +853,22 @@ footer p{
     filter: invert(65%); /* Invert color on hover (optional) */
   }
   .userflowchart-1 {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
-
+  .process-1 {
+    margin-top: 2rem;}
+    .experiencee {
+      margin-top: 1.4rem;}
+      .cont-1{
+        margin-top: 0.6rem;
+      }
+      .featurediv{
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+      }
+      .featurediv1{
+        margin-top: 2rem;
+      }
 /* desktop version */
 
   @media (min-width: 900px) {
@@ -1212,6 +1247,14 @@ footer p{
   grid-row-gap: 20px;
   grid-column-gap: 45px;
 }
+.grid-1{
+  display: grid;
+  padding: 3rem;
+  grid-template-rows: auto auto; /* 2 rows, adjust the height as needed */
+  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-row-gap: 20px;
+  grid-column-gap: 45px;
+}
 .one {
   grid-column: 1 / 1; /* Div one spans from column 1 to column 2 */
   grid-row: 1 / 2; /* Div one spans from row 1 to row 2 */}
@@ -1219,22 +1262,30 @@ footer p{
   grid-column: 1 / 2; /* Div two spans from column 2 to column 3 */
   grid-row: 2 / 2; /* Div two spans from row 1 to row 2 */
   }
+  .one-1 {
+    grid-column: 1 / 1; /* Div one spans from column 1 to column 2 */
+    grid-row: 1 / 2; /* Div one spans from row 1 to row 2 */}
+    .two-1 {
+    grid-column: 1 / 2; /* Div two spans from column 2 to column 3 */
+    grid-row: 2 / 2; /* Div two spans from row 1 to row 2 */
+    }
+    .four-1 {
+      grid-column: 2 / 2;
+      grid-row: 2 / 2;}
 .grid-center{
   margin-left: 2rem;
 }
 .difful{
   list-style: circle;
   margin-left: 1rem;
-  margin-top: 1rem;}
-.grid-margin{
-  margin-top: 1rem;
-}
+  /*! margin-top: 1rem; */}
 .process{
   padding: 3rem;
   display: flex;
   gap: 5rem;
   justify-content: center;
   align-items: center;
+  margin-right: 2rem;
 }
 .process-1{
   padding: 3rem;
@@ -1316,6 +1367,7 @@ footer p{
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  margin-bottom: 0rem;
 }
 .featurediv1{
   display: flex;
@@ -1323,6 +1375,7 @@ footer p{
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  margin-bottom: 0rem;
 }
 .conclusion{
   padding: 0rem 6rem;
@@ -1330,7 +1383,7 @@ footer p{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 8rem;
 }
 .feature{
   max-width: 35rem;
