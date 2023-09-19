@@ -262,7 +262,6 @@ h1{
     line-height: 1.1em;
     font-size: 1.375rem;
     font-variation-settings: "wght" 800;
-    /*! margin-top: 0.5rem; */
 }
 h2{
     font-family: "Inter", Helvetica, sans-serif;
@@ -270,11 +269,10 @@ h2{
     line-height: 1.1em;
     font-size: 1.25rem;
     font-variation-settings: "wght" 700;
-    /*! margin-top: 0.5rem; */
 }
 h3{
     font-family: "Inter", Helvetica, sans-serif;
-    color: #2e2e2e;
+    color: #403F3F;
     line-height: 1.1em;
     font-size: 1.125rem;
     font-variation-settings: "wght" 700;
@@ -286,7 +284,7 @@ h3{
   grid-row-gap: 0.25rem;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 0.3rem;
+  padding-top: 0.6rem;
   padding-bottom: 1rem;
 }
 .tag {
@@ -343,14 +341,14 @@ h3{
   opacity: 1;
   transform: translateY(0);
 }
-/*intro h2 style class*/
+/*intro h2 style class
 .introtitle{
 color: #000;
 padding: 0.5rem 0rem;
 line-height: 1.1em;
 font-size: 1.25rem;
 font-variation-settings: "wght" 700;
-}
+}*/
 /*explore more button styling */
 .exploremore{
    padding: 0.8rem;
@@ -773,11 +771,15 @@ footer p{
   margin-bottom: 3rem;
 }
 .conclusion{
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.conclusion1{
+  margin-bottom: 2rem;
+  padding: 0rem 1rem;
+  
 }
 .cont{
-  margin-top: rem;
   margin-bottom: 2rem;
 }
 /*
@@ -868,6 +870,12 @@ footer p{
       }
       .featurediv1{
         margin-top: 2rem;
+      }
+      .icon-black{
+        display: block;
+      }
+      .icon-white{
+        display: none;
       }
 /* desktop version */
 
@@ -1145,7 +1153,7 @@ time {
   grid-column-gap: 0.625rem;
   grid-row-gap: 0.625rem;
   flex-wrap: wrap;
-  padding-top: 0.3rem;
+  padding-top: 0.6rem;
   padding-bottom: 1rem;
   display: flex;
   max-width: 24rem;
@@ -1288,11 +1296,22 @@ footer p{
   margin-right: 2rem;
 }
 .process-1{
-  padding: 3rem;
+  background-color: #351802;
+  color: #fff;
 }
 .processcontent {
   max-width: 36rem;
   margin-left: 2rem;
+}
+.processcontent-1{
+  max-width: 36rem;
+}
+.design-padding{
+  padding: 1rem 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
 }
 .userflow {
   padding: 3rem 6rem;}
@@ -1378,6 +1397,14 @@ footer p{
   margin-bottom: 0rem;
 }
 .conclusion{
+  padding: 0rem 6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+.conclusion1{
   padding: 0rem 6rem;
   display: flex;
   flex-direction: row;
@@ -1475,5 +1502,11 @@ footer p{
   }
   .userflowchart-1p{
     display: block;
+  }
+  .icon-black{
+    display:none;
+  }
+  .icon-white{
+    display:block;
   }
   }
