@@ -220,10 +220,11 @@ button {
 }
 .links {
   margin: 0 3px;
-  color: #d6d6d6;
+  color: #ffffff;
   text-decoration: none;
   font-variation-settings: "wght" 700;
   position: relative; /* Required for pseudo-element */
+ 
 }
 .links::before {
   content: "";
@@ -234,6 +235,7 @@ button {
   height: 2px; /* Adjust this value to control the underline thickness */
   background-color: #ffffff;
   transition: width 0.3s ease;
+  
 }
 
 .links:hover::before,
@@ -683,6 +685,7 @@ footer p{
 .types{
   color: #4f4f4f;
   font-size: 0.8rem;
+  line-height: 1.5em;
 }
 .one{
   margin-bottom: 1rem;
@@ -716,11 +719,15 @@ footer p{
 .userflow{
   margin-bottom: 1rem;
 }
+.userflowchart-1p{
+  display: none;
+}
 .prototype1{
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 .prototype2{
   margin-bottom: 1rem;
+  /*! margin-top: 2rem; */
 }
 .accessibility{
   margin-bottom: 1rem;
@@ -765,9 +772,6 @@ footer p{
   .li-fimargin{
     margin-top: 2rem;
   }
-  .userflowchart-1{
-    display: none;
-  }
   /* case study 2 */
   .mobile-centered{
     margin-top: 2rem;
@@ -780,6 +784,56 @@ footer p{
   .userflowchartt {
     margin-top: 1rem;
   }
+  /* icons grid */
+  .caseone{
+    font-size: 0.9rem;
+    font-variation-settings: "wght" 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    line-height: 1.3em;
+  }
+  .caseicons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    justify-items: center;
+    gap: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  } /*
+  .casetext{
+     margin-top: 1rem; */
+  
+  .new-tab-link {
+    margin-top: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-variation-settings: "wght" 400;
+    color: #000000; /* Link color */
+  }
+  .new-tab-link:hover {
+  opacity: 100%;
+  color: #42365c;
+  font-variation-settings: "wght" 700;
+  }
+  .new-tab-icon {
+    width: 16px; 
+    height: 16px;
+    margin-left: 5px; /* Adjust spacing between text and icon */
+    
+  }
+  .new-tab-link:hover .new-tab-icon {
+    filter: invert(65%); /* Invert color on hover (optional) */
+  }
+  .userflowchart-1 {
+    margin-top: 2rem;
+  }
+
 /* desktop version */
 
   @media (min-width: 900px) {
@@ -1070,6 +1124,9 @@ time {
   display: inline-block;
   font-variation-settings: "wght" 400;
 }
+.types {
+  margin-bottom: 1rem;
+  font-size: 1rem;}
 /*back to top button */
 .backtop {
   width: 5%;
@@ -1138,7 +1195,7 @@ footer p{
 /*casestudy1*/
 .casehead{
   display: flex;
-  padding: 3rem;
+  padding: 3rem 6rem;
   justify-content: center;
   align-items: center;
   gap: 3rem;
@@ -1174,13 +1231,17 @@ footer p{
 }
 .process{
   padding: 3rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 .process-1{
   padding: 3rem;
 }
 .processcontent {
   max-width: 36rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 .userflow {
   padding: 3rem 6rem;}
@@ -1289,7 +1350,7 @@ footer p{
 }
 /*case study 2*/
 .typecont{
-  max-width: 77rem;
+  max-width: 73rem;
 }
 .experiencee{
   padding: 0rem 6rem;
@@ -1350,5 +1411,16 @@ footer p{
   margin-bottom: 0rem;
   gap: 4rem;
 }
+.caseicons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);}
 
+  .new-tab-link {
+    font-variation-settings: "wght" 600;
+   margin-top: 0rem;
+  }
+  .userflowchart-1p{
+    display: block;
+  }
   }
