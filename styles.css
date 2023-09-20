@@ -659,7 +659,7 @@ footer p{
   cursor: pointer;
   position: absolute;
   width: auto;
-  color: #402f65;
+  color: #787878;
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
@@ -678,13 +678,16 @@ footer p{
   height: 10px;
   width: 10px;
   margin: 1px 2px;
-  background-color: #161237;
+  background-color: #000000;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-  background-color: #987BD7;
+  background-color: #9c9c9c;
+}
+.active, .dot:focus{
+  background-color: #9c9c9c;
 }
 .nexxt {
   text-align: center;
