@@ -853,7 +853,7 @@ footer p{
   }
   .new-tab-link:hover {
   opacity: 100%;
-  color: #42365c;
+  color: #cccccc;
   font-variation-settings: "wght" 700;
   }
   .new-tab-icon {
