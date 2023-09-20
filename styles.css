@@ -341,14 +341,6 @@ h3{
   opacity: 1;
   transform: translateY(0);
 }
-/*intro h2 style class
-.introtitle{
-color: #000;
-padding: 0.5rem 0rem;
-line-height: 1.1em;
-font-size: 1.25rem;
-font-variation-settings: "wght" 700;
-}*/
 /*explore more button styling */
 .exploremore{
    padding: 0.8rem;
@@ -459,6 +451,18 @@ margin-bottom: 2rem;
  }
 
  /*about page */
+ .herobanner01{
+  background-color: #000;
+  padding: 1rem;
+  
+ }
+ .aboutbanner{
+  margin-top: 6rem;
+ }
+.name-about{
+  font-size: 1.3rem;
+  font-variation-settings: "wght" 400;
+}
  .experience{
   color: #000;
   font-variation-settings: "wght" 800;
@@ -482,10 +486,7 @@ margin-bottom: 2rem;
   max-width: 80rem;
   color: #fff;
  }
- .herotitle1 {
-  color: #fff;
-  margin-top: 7rem;
-}
+
 
 /*footer */
 footer{
@@ -555,14 +556,29 @@ footer p{
     list-style: none; 
   } 
   /*about page*/
+  .herotitle1 {
+    font-size: 1.3rem;
+    color: #989898;
+    font-variation-settings: "wght" 400;
+   }
+   .aboutmargin{
+    margin-left: 1rem;
+   }
+ .iconswhite-1{
+  display: none;
+ }
+ .imagesec {
+  margin-top: -4rem;
+  margin-bottom: -1.4rem;
+}
   .resume{
-    padding: 2rem;
+    padding: 1rem;
   }
   .grad1 {
     margin-top: 1rem;
   }
   .job {
-    font-size: 1.2rem;}
+    font-size: 1.14rem;}
 
   .grad{
   margin-top: 1.5rem;}
@@ -724,14 +740,6 @@ footer p{
 .process{
   margin-bottom: 1rem;
 }
-/* fix this later 
-.process-1{
-  padding: 0;
-  background-color: #000;
-  color: #fff;
-  margin-bottom: 1rem;
-}
-*/
 .userflow{
   margin-bottom: 1rem;
 }
@@ -782,11 +790,6 @@ footer p{
 .cont{
   margin-bottom: 2rem;
 }
-/*
-.userflowchart{
-  /*! margin-top: 2rem; */
-  /*! margin-bottom: 2rem; 
-}*/
 .featureul {
   margin-left: 1.5rem;}
   .num{
@@ -987,13 +990,8 @@ footer p{
   font-size: 7rem;
   text-align: right;
  }
- .herotitle1 {
-  font-size: 2.5rem;
-  color: #fff;
-  margin-left: -0.3rem;
-  
- }
- .herobanner1 {
+
+ .herobanner0s1 {
   display: flex;
   flex-direction: row;
   padding: 5rem 1rem 6rem 1rem;
@@ -1145,6 +1143,10 @@ time {
     margin: -4rem auto 1rem auto;
 }
 .iconswhite {
+  margin-top: 22rem;
+  margin-left: -73.5rem;
+}
+.iconswhite-1 {
   margin-top: 22rem;
   margin-left: -73.5rem;
 }
