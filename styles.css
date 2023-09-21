@@ -1024,6 +1024,11 @@ h2{
   font-size: 2.2rem;
   line-height: 1.4em;
 }
+.designh2{
+  font-size: 2.2rem;
+  line-height: 1.4em;
+  color: #fff;
+}
 h3{
   font-size: 1.8rem; 
 }
@@ -1253,7 +1258,7 @@ footer p{
   padding: 3rem 6rem;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 7rem;
   margin-bottom: -5rem;
 }
 .imagetop{
@@ -1442,7 +1447,7 @@ footer p{
 }
 /*case study 2*/
 .typecont{
-  max-width: 73rem;
+  max-width: 65rem;
 }
 .experiencee{
   padding: 0rem 6rem;
