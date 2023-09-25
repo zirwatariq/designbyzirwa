@@ -533,7 +533,7 @@ footer p{
   max-width: 10rem; 
   margin-left: 2rem;
 }
-.backtop{
+.backtop {
   cursor: pointer;
   display: block;
   position: absolute;
@@ -553,6 +553,11 @@ footer p{
   border: 2px solid #000;
   border-radius: 65%;
 }
+.backtop a:focus {
+  border: 2px solid #000;
+  border-radius: 65%;
+}
+
 /*social icons */
 .sicon {
   width: 30px; /* Adjust the width value to set the desired size */
@@ -670,7 +675,9 @@ footer p{
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
  }
  .logos-scrool {
-  margin-top: 4rem;}
+  margin-top: 4rem;
+  max-width: 26rem;
+}
 
  .slideshow-container {
   max-width: 500px;
@@ -735,7 +742,7 @@ footer p{
   margin-bottom: 2rem;
 }
 .types{
-  color: #4f4f4f;
+  color: #575757;
   font-size: 0.8rem;
   line-height: 1.5em;
 }
@@ -883,7 +890,7 @@ footer p{
   }
   .new-tab-link:hover {
   opacity: 100%;
-  color: #cccccc;
+  color: #4b4b4b;
   font-variation-settings: "wght" 700;
   }
   .new-tab-icon {
@@ -954,9 +961,9 @@ footer p{
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     /*! position: relative; */
-    /*! transition: none; 
+    /*! transition: none; */ /* 
     max-width: 18rem;
     margin-left: 24rem;
     */
@@ -1119,7 +1126,7 @@ align-items: center;
 }
 .contentintro2-2{
   max-width: 40rem;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 6rem;
   margin-right: 5rem;
 }
 
@@ -1220,7 +1227,9 @@ time {
 }
 .types {
   margin-bottom: 1rem;
-  font-size: 1rem;}
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
 
 /*back to top button */
 .backtop {
