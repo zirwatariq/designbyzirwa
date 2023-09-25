@@ -82,11 +82,6 @@ function showSlides(n) {
 
 */
 
-// Initialize slide indices for each slideshow
-let slideIndexLogo = 1;
-let slideIndexPoster = 1;
-let slideIndexVectorIllustration = 1;
-let slideIndexDigitalIllustration = 1;
 
 // Function to control the slides for each slideshow
 /*function plusSlides(n, slideshowId) {
@@ -100,6 +95,13 @@ let slideIndexDigitalIllustration = 1;
         showSlides(slideIndexDigitalIllustration += n, slideshowId);
     }
 }*/
+
+// Initialize slide indices for each slideshow
+let slideIndexLogo = 1;
+let slideIndexPoster = 1;
+let slideIndexVectorIllustration = 1;
+let slideIndexDigitalIllustration = 1;
+
 function plusSlides(n, slideshowId) {
     let currentIndex;
     if (slideshowId === 'logoSlideshow') {
@@ -191,5 +193,16 @@ document.addEventListener('DOMContentLoaded', () => {
     showSlides(slideIndexPoster, 'posterSlideshow');
     showSlides(slideIndexVectorIllustration, 'vectorIllustrationSlideshow');
     showSlides(slideIndexDigitalIllustration, 'digitalIllustrationSlideshow');
-});
+
+        // Add keyboard event listeners
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'ArrowLeft') {
+              plusSlides(-1, 'logoSlideshow');
+          } else if (event.key === 'ArrowRight') {
+              plusSlides(1, 'logoSlideshow');
+          } else if (event.key === 'Enter') {
+              currentSlide(1, 'logoSlideshow');
+          }
+      });
+  });
 
