@@ -32,6 +32,7 @@
     z-index: 1001;
     top: -1rem;
     position: relative;
+    outline: none;
   }
 
 #skip:hover{
@@ -39,6 +40,7 @@
 }
 #skip:focus {
   text-decoration: underline 1px solid #000;
+  box-shadow: 0 0 3px 2px #000;
 }
 #mainPag {
   padding: 1rem;
@@ -75,12 +77,10 @@
   max-width: 3rem;
   margin-top: 0.8rem;
 }
-
 button {
   background: none;
   border: none;
 }
-
 /* Styles for the navigation drawer */
 .drawer {
   position: fixed;
@@ -131,6 +131,7 @@ button {
   text-align: center;
   justify-content: center;
   display: grid;
+  /*! max-width: 22rem; */
 }
 .bar a {
   text-decoration: none;
@@ -157,15 +158,12 @@ button {
 .bar li:active{
   text-decoration: underline 2px solid #987BD7;
 }
-
-
 /* Styles for the navigation dropdown */
 .bar li ul {
   list-style: none;
   display: none;
   background-color: #ffffff;
   place-items: center;  /* Position the submenu to the right of the parent */
-
 }
 .bar li ul li {
   border: 0.25px solid #000;
@@ -177,6 +175,24 @@ button {
 .bar li ul li a {
   color: #000000;
 }
+.bar li ul li a:link{
+ text-decoration: none;
+}
+.bar li ul li a:visited{
+  text-decoration: underline 2px solid #987BD7;
+ }
+.bar li ul li a:hover {
+  font-size: 1rem;
+  font-variation-settings: "wght" 600;
+}
+.bar li ul li a:focus{
+  font-size: 1rem;
+  font-variation-settings: "wght" 600;
+}
+.bar li ul li a:active{
+  color: #433461;
+}
+
 .drawer .bar li:hover > ul {
   display: block;
 }
@@ -197,7 +213,7 @@ button {
 
 /*hero banner */
 .herobanner{
-    padding: 5rem 1rem 5rem 1rem;
+    padding: 7rem 1rem 5rem 1rem;
     background-color: #000000;
 }
 .herobanner1{
@@ -529,6 +545,14 @@ footer p{
   transform: translateY(-40%); /* Translate the image up by 40% of its own height to vertically center it */
   margin-top: -1.5rem;
 }
+.backtop:hover {
+  border: 2px solid #000;
+  border-radius: 65%;
+}
+.backtop:focus {
+  border: 2px solid #000;
+  border-radius: 65%;
+}
 /*social icons */
 .sicon {
   width: 30px; /* Adjust the width value to set the desired size */
@@ -666,6 +690,12 @@ footer p{
   border-radius: 4px;
   user-select: none;
   text-align: center;
+}
+.prev, .next:hover {
+  color: #545454;
+}
+.prev, .next:focus {
+  color: #545454;
 }
 /* Position the "next button" to the right */
 .next {
@@ -904,8 +934,6 @@ footer p{
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     padding: 2.5rem 1.5rem 2rem;
     z-index: 1000;
     align-items: center;
@@ -927,17 +955,23 @@ footer p{
     flex-direction: row;
     list-style: none;
     margin-top: 1.5rem;
-    position: relative;
+    /*! position: relative; */
+    /*! transition: none; 
+    max-width: 18rem;
+    margin-left: 24rem;
+    */
+
     }
     .bar li {
       position: relative;
+      transition: none;
     }
-   
     .bar li a{
       color: #000;
       font-size: 1.05rem;
       font-variation-settings: "wght" 450;
       text-decoration: none;
+      transition: none;
     }
     .bar li a:hover{
       font-size: 1.1rem;
@@ -948,15 +982,14 @@ footer p{
       font-variation-settings: "wght" 600;
     }
      /* navigation menu */
-     .drawer {
-      border: none;
-      outline: none; 
+     .drawer { 
       width: 65rem;
       position: absolute;
       border: none;
-      margin-right: 3rem;
+      margin-right: 1rem;
       margin-top: -0.5rem;
       box-shadow: none;
+      transition: none;
       }
       .bar li ul{
         margin-top: 3.5rem;
@@ -964,6 +997,7 @@ footer p{
         width: 15rem;
         justify-content: center;
         margin-left: -4rem;
+        transition: none;
       }
       button {
         display: none;
@@ -988,7 +1022,7 @@ footer p{
   display: flex;
   flex-direction: row;
   padding: 10rem 1rem 6rem 0rem;
-  height: 85vh;
+  /*height: 85vh;*/
   align-items: center;
  }
  .herotwo {
@@ -1004,7 +1038,7 @@ footer p{
   display: flex;
   flex-direction: row;
   padding: 5rem 1rem 6rem 1rem;
-  height: 85vh;
+  /*height: 85vh;*/
   align-items: center;
   /*! padding: 3rem; */
   justify-content: center;
@@ -1176,10 +1210,10 @@ time {
   max-width: 24rem;
 }
 .tag {
-  color: #000000;
-  border: 1px solid #000000;  
-  border-radius: 0.5rem;
-  padding: 0.25rem 0.625rem;
+  color: #717171;
+  border: 1px solid #717171;  
+  border-radius: 5rem;
+  padding: 0.15rem 0.625rem;
   font-size: .75rem;
   display: inline-block;
   font-variation-settings: "wght" 400;
@@ -1187,6 +1221,7 @@ time {
 .types {
   margin-bottom: 1rem;
   font-size: 1rem;}
+
 /*back to top button */
 .backtop {
   width: 5%;
@@ -1209,13 +1244,14 @@ footer p{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
+  gap: 14rem;
 }
 .motion-content {
   max-width: 36rem;
 }
 .motion-video{
   max-width: 40rem;
+  margin-right: 3rem;
 }
 .logoanimation{
   padding: 2rem 3rem 1rem 4.5rem;;
@@ -1530,7 +1566,7 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
+    gap: 9rem;
     padding: 6rem 0rem;
   }
   .iconswhite-01{
@@ -1544,5 +1580,8 @@ footer p{
   .herotitle1 {
     font-size: 2rem;
   }
-
+  .motion {
+    padding: 1.5rem;
+   
+  }
   }
