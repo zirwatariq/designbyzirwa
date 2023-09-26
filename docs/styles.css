@@ -5,10 +5,9 @@
   }
   :root {
     --mainColor: #000000;
-    --purpleColor: #5B4252;
-    --maroonColor: #481E15;
-    --greenColor: #172F1B;
-    --brownColor: #492B1B; 
+    --purpleColor: #161237;
+    --lightpurpleColor: #987BD7;
+    --greyColor: #403F3F;
   }
 
   /* typography */
@@ -906,13 +905,15 @@ footer p{
   .new-tab-link:hover .new-tab-icon {
     filter: invert(65%); /* Invert color on hover (optional) */
   }
-  .userflowchart-1 {
-    margin-top: 1rem;
+
+     /*
+       .process-1 {
+        margin-top: 2rem;}
+        .experiencee {
+        margin-top: 1.4rem;}
+       .userflowchart-1 {
+        margin-top: 1rem;
   }
-  .process-1 {
-    margin-top: 2rem;}
-    .experiencee {
-      margin-top: 1.4rem;}
       .cont-1{
         margin-top: 0.6rem;
       }
@@ -922,7 +923,7 @@ footer p{
       }
       .featurediv1{
         margin-top: 2rem;
-      }
+      }*/
       .icon-black{
         display: block;
       }
