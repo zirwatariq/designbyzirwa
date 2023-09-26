@@ -139,7 +139,7 @@ button {
   text-decoration: none;
 }
 .bar li:visited{
-  color: #433461;
+  color: #251b39;
   font-variation-settings: "wght" 600;
 }
 .bar li:hover {
@@ -154,12 +154,12 @@ button {
 .bar li:active{
   text-decoration: underline 2px solid #987BD7;
 }
-/* Styles for the navigation dropdown */
+/* Styles for the navigation dropdown 
 .bar li ul {
   list-style: none;
   display: none;
   background-color: #ffffff;
-  place-items: center;  /* Position the submenu to the right of the parent */
+  place-items: center; 
 }
 .bar li ul li {
   border: 0.25px solid #000;
@@ -188,14 +188,14 @@ button {
 .bar li ul li a:active{
   color: #433461;
 }
-
+/*
 .drawer .bar li:hover > ul {
   display: block;
 }
 .drawer .bar li:focus> ul {
   display: block;
 }
-
+*/
 /* this is the top name */
 .name {
   color: #c8c8c8;
