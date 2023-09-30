@@ -154,6 +154,48 @@ button {
 .bar li:active{
   text-decoration: underline 2px solid #987BD7;
 }
+/* Styles for the navigation dropdown 
+.bar li ul {
+  list-style: none;
+  display: none;
+  background-color: #ffffff;
+  place-items: center; 
+}
+.bar li ul li {
+  border: 0.25px solid #000;
+  width: 100%;
+}
+.bar li ul li:last-child {
+  border-bottom: 1px solid #000;
+}
+.bar li ul li a {
+  color: #000000;
+}
+.bar li ul li a:link{
+ text-decoration: none;
+}
+.bar li ul li a:visited{
+  text-decoration: underline 2px solid #987BD7;
+ }
+.bar li ul li a:hover {
+  font-size: 1rem;
+  font-variation-settings: "wght" 600;
+}
+.bar li ul li a:focus{
+  font-size: 1rem;
+  font-variation-settings: "wght" 600;
+}
+.bar li ul li a:active{
+  color: #433461;
+}
+/*
+.drawer .bar li:hover > ul {
+  display: block;
+}
+.drawer .bar li:focus> ul {
+  display: block;
+}
+*/
 /* this is the top name */
 .name {
   color: #c8c8c8;
@@ -493,17 +535,26 @@ footer p{
 #back_top {
   cursor: pointer;
   display: block;
-  position: relative; /* Change to relative for proper positioning */
-  width: 22%;
-  margin: 0 auto; /* Shortened for simplicity */
-  transition: transform 0.3s ease; 
-  margin-top: -2.7rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  transform: translateY(-40%); /* Translate the image up by 40% of its own height to vertically center it */
+  margin-top: -1.5rem;
 }
-#back_top:hover {
-  transform: translateY(-40%) scale(1.2); 
+.backtop:hover {
+  border: 2px solid #000;
+  border-radius: 65%;
 }
-#back_top:focus {
-  transform: translateY(-40%) scale(1.2); 
+.backtop:focus {
+  border: 2px solid #000;
+  border-radius: 65%;
+}
+.backtop a:focus {
+  border: 2px solid #000;
+  border-radius: 65%;
 }
 
 /*social icons */
@@ -550,6 +601,7 @@ footer p{
   display: none;
  }
  .imagesec {
+  margin-top: -4rem;
   margin-bottom: -1.4rem;
 }
   .resume{
@@ -853,6 +905,25 @@ footer p{
   .new-tab-link:hover .new-tab-icon {
     filter: invert(65%); /* Invert color on hover (optional) */
   }
+
+     /*
+       .process-1 {
+        margin-top: 2rem;}
+        .experiencee {
+        margin-top: 1.4rem;}
+       .userflowchart-1 {
+        margin-top: 1rem;
+  }
+      .cont-1{
+        margin-top: 0.6rem;
+      }
+      .featurediv{
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+      }
+      .featurediv1{
+        margin-top: 2rem;
+      }*/
       .icon-black{
         display: block;
       }
@@ -1170,9 +1241,8 @@ time {
 
 /*back to top button */
 #back_top {
-  width: 6%;
+  width: 7%;
   margin-top: -3.5rem;
-  transform: translateY(-40%); 
 }
 footer{
   padding: 3rem;
