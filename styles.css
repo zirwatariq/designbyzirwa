@@ -323,7 +323,7 @@ h3{
 .exploremore{
    padding: 0.8rem;
    color: #fff;
-   background-color: #020202;
+   background: linear-gradient(#5F68BD, #886FC3);
    border-radius: 0.4rem;
    margin-left: auto; /* Set left margin to auto */
    margin-right: auto; /* Set right margin to auto */
@@ -377,7 +377,7 @@ margin-bottom: 2rem;
 .exploremore1{
     padding: 0.8rem;
     color: #ffffff;
-    background-color: #000000;
+    background: linear-gradient(#5F68BD, #886FC3);
     text-decoration: none;
     font-variation-settings: "wght" 700; /*bold */
     margin-left: auto;
@@ -872,7 +872,7 @@ footer p{
 
  .header {
     max-width: 100rem;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     display: flex;
     flex-direction: row;
@@ -881,6 +881,9 @@ footer p{
     align-items: center;
     position: fixed;
  }
+.drawer{
+  background-color: #ffffff;
+}
  /*header logo */
  .header .logo {
   width: 100%;
@@ -904,7 +907,7 @@ footer p{
       transition: none;
     }
     .bar li a{
-      color: #000;
+      color: #000000;
       font-size: 1.05rem;
       font-variation-settings: "wght" 450;
       text-decoration: none;
@@ -1018,7 +1021,7 @@ h4{
   font-variation-settings: "wght" 800;
 }
 .headings{
-  padding: 0rem 0 2rem 6.2rem;}
+  padding: 2rem 0 2rem 6.2rem;}
 .headingadditional {
   padding: 4rem 6.5rem;
 }
