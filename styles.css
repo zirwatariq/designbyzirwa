@@ -169,7 +169,7 @@ button {
 /*hero banner */
 .herobanner{
     padding: 7rem 1rem 5rem 1rem;
-    background-color: #000000;
+    background-color: #09071C;
 }
 .herobanner1{
   padding: 1rem 1rem 0 1rem;
@@ -323,7 +323,8 @@ h3{
 .exploremore{
    padding: 0.8rem;
    color: #fff;
-   background: linear-gradient(#5F68BD, #886FC3);
+   /*background: linear-gradient(#5F68BD, #886FC3); */
+   background: #000;
    border-radius: 0.4rem;
    margin-left: auto; /* Set left margin to auto */
    margin-right: auto; /* Set right margin to auto */
@@ -430,7 +431,7 @@ margin-bottom: 2rem;
 
  /*about page */
  .herobanner01{
-  background-color: #000;
+  background-color: #09071C;
   padding: 1rem;
   
  }
@@ -439,7 +440,7 @@ margin-bottom: 2rem;
  }
 .name-about{
   font-size: 1.3rem;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wght" 500;
 }
  .experience{
   color: #000;
@@ -540,8 +541,8 @@ footer p{
   /*about page*/
   .herotitle1 {
     font-size: 1.3rem;
-    color: #989898;
-    font-variation-settings: "wght" 400;
+    color: #d6d6d6;
+    font-variation-settings: "wght" 500;
    }
    .aboutmargin{
     margin-left: 1rem;
@@ -872,7 +873,7 @@ footer p{
 
  .header {
     max-width: 100rem;
-    background-color: #ffffff;
+    background-color: #09071C;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     display: flex;
     flex-direction: row;
@@ -882,7 +883,7 @@ footer p{
     position: fixed;
  }
 .drawer{
-  background-color: #ffffff;
+  background-color: #09071C;
 }
  /*header logo */
  .header .logo {
@@ -907,7 +908,7 @@ footer p{
       transition: none;
     }
     .bar li a{
-      color: #000000;
+      color: #ffffff;
       font-size: 1.05rem;
       font-variation-settings: "wght" 450;
       text-decoration: none;
@@ -962,7 +963,8 @@ footer p{
   max-width: 30rem;
 }
 .herointro1 {
-  max-width: 38rem;
+  max-width: 40rem;
+  /*! margin-right: 2rem; */
 }
 
  .herobanner {
@@ -1517,8 +1519,8 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 9rem;
-    padding: 6rem 0rem;
+    gap: 8rem;
+    padding: 3rem 0rem;
   }
   .iconswhite-01{
     display: block;
@@ -1533,6 +1535,9 @@ footer p{
   }
   .motion {
     padding: 1.5rem;
-   
+  }
+  video {
+    width: 100%;
+    margin-left: 3rem;
   }
   }
