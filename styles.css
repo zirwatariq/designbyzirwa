@@ -378,7 +378,8 @@ margin-bottom: 2rem;
 .exploremore1{
     padding: 0.8rem;
     color: #ffffff;
-    background: linear-gradient(#5F68BD, #886FC3);
+    background:#000;
+    /*background: linear-gradient(#5F68BD, #886FC3);*/
     text-decoration: none;
     font-variation-settings: "wght" 700; /*bold */
     margin-left: auto;
@@ -852,6 +853,10 @@ footer p{
     margin-left: 5px; /* Adjust spacing between text and icon */
     
   }
+  .newtab{
+    width: 16px; 
+    height: 16px;
+  }
   .new-tab-link:hover .new-tab-icon {
     filter: invert(65%); /* Invert color on hover (optional) */
   }
@@ -970,7 +975,7 @@ footer p{
  .herobanner {
   display: flex;
   flex-direction: row;
-  padding: 10rem 1rem 6rem 0rem;
+  padding: 10rem 0rem 10rem 0rem;
   /*height: 85vh;*/
   align-items: center;
  }
